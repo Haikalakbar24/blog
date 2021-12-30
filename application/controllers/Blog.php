@@ -44,5 +44,10 @@
 			}
 			$this->load->view('form_edit', $data);
 		}
+		public function deleteBlog($id)
+		{
+			$this->Blog_model->deleteBlog($id);
+			redirect('blog/index');
+		}
 	}
 ?>
